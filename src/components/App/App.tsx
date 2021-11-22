@@ -1,10 +1,18 @@
 import React from 'react';
 import './App.css';
+import { useSelector } from 'react-redux';
+import { IState } from 'interfaces';
+import Posts from '../Posts';
+import Error from '../Error';
 
-const App = () => (
-  <div className="App">
-    <h1>Test</h1>
-  </div>
-);
+const App = () => {
+  const err: string = useSelector((state:IState) => state.error);
+  const content = err ? <Error err={err} /> : <Posts />;
+  return (
+    <div className="App">
+      {content}
+    </div>
+  );
+};
 
 export default App;
