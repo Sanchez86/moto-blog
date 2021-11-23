@@ -1,18 +1,22 @@
 import React from 'react';
+import { Route, Switch, Link } from 'react-router-dom';
 import './App.css';
-import { useSelector } from 'react-redux';
-import { IState } from 'interfaces';
-import Posts from '../Posts';
-import Error from '../Error';
+import Home from '../../pages/Home';
+import SinglePost from '../../pages/SinglePost';
 
-const App = () => {
-  const err: string = useSelector((state:IState) => state.error);
-  const content = err ? <Error err={err} /> : <Posts />;
-  return (
-    <div className="App">
-      {content}
-    </div>
-  );
-};
+const App = () => (
+  <>
+    <header><Link to="/">Home</Link></header>
+    <Switch>
+
+      <Route path="/" exact>
+        <Home />
+      </Route>
+
+      <Route path="/post/:postId" component={SinglePost} />
+
+    </Switch>
+  </>
+);
 
 export default App;
