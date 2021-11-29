@@ -7,16 +7,31 @@ import {
   loadPostsFailure,
 } from '../actions/load-posts';
 
+import markupPosts from '../actions/markup-posts';
+
+type Markup = 'list' | 'module' | 'quilt';
+
+interface IInitialState {
+  data: Array<any>;
+  error: string;
+  isLoading: boolean;
+  markup: Markup;
+}
+
 const lsData = localStorage.getItem('data');
 
-const initialState = {
+const initialState: IInitialState = {
   data: lsData ? JSON.parse(lsData) : [],
   error: '',
   isLoading: false,
+  markup: 'module',
 };
 
 const reducer = createReducer(initialState, (builder) => {
   builder
+    .addCase(markupPosts, (state, action) => {
+      state.markup = action.payload;
+    })
     .addCase(loadPostsRequest, (state) => { // запрос
       state.isLoading = true;
       state.error = ''; // обнулили

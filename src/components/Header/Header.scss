@@ -1,0 +1,20 @@
+header{
+    background-image: linear-gradient(90deg, rgb(1, 36, 0) 0%, rgb(82, 240, 76) 0%, rgb(18, 9, 121) 0%, rgb(184, 10, 177) 100%, rgb(241, 255, 0) 100%);
+}
+.link-home{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.icon-block{
+  border: 0 !important;
+  background-color: transparent !important;
+    svg{
+      color: rgb(122, 122, 122);
+    }
+    &.Mui-selected{
+      svg{
+        color: #ffffff;
+      }
+    }
+  }

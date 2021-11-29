@@ -1,11 +1,7 @@
 import React from 'react';
 import './error.scss';
 
-interface MyCustomInterface{
-  err: string;
-}
-
-const Error = ({ err }: MyCustomInterface) => {
+const Error = ({ err }: { err: string }) => {
   const { status, message } = JSON.parse(err);
 
   return (

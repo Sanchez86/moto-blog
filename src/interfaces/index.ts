@@ -21,4 +21,5 @@ export interface IState {
   data: IData[];
   error: string;
   isLoading: boolean;
+  markup: string
 }
