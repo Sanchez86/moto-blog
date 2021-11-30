@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3135bf22-e532-4320-9b67-25783c46a879" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/Post.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +12,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,6 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -37,11 +46,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\konev\PhpstormProjects\moto-blog" />
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src" />
       <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\components" />
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\store\saga" />
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog" />
       <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\store" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\components\Post" />
       <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\components\App" />
     </key>
   </component>
@@ -69,6 +81,12 @@
       <workItem from="1637245325432" duration="588000" />
       <workItem from="1637245927897" duration="2649000" />
       <workItem from="1637306835663" duration="2165000" />
+      <workItem from="1637328249749" duration="942000" />
+      <workItem from="1637329889370" duration="567000" />
+      <workItem from="1637333579535" duration="1259000" />
+      <workItem from="1637569248551" duration="23747000" />
+      <workItem from="1637598183179" duration="15000" />
+      <workItem from="1637655145606" duration="9323000" />
     </task>
     <servers />
   </component>
@@ -80,7 +98,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/show-posts" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
