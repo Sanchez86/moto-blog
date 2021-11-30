@@ -29,7 +29,6 @@ const reducer = createReducer(initialState, (builder) => {
     .addCase(loadPostsFailure, (state, action) => { // ошибка
       state.isLoading = false;
       state.error = action.payload;
-      console.log('action.payload', action.payload);
     })
     .addDefaultCase(() => {});
 });

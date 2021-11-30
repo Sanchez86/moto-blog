@@ -1,17 +1,18 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loadPostsRequest } from 'store/actions/load-posts';
-import { IState, IData } from 'interfaces';
+import { selectPosts } from 'store/selectors';
+import { IData } from 'interfaces';
 import Post from '../Post';
 
-const Posts = () => {
+const Posts: React.FC = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(loadPostsRequest());
   }, [dispatch]);
 
-  const posts:IData[] = useSelector((state:IState) => state.data);
+  const posts = useSelector(selectPosts);
 
   return (
     <div>

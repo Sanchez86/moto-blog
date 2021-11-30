@@ -1,8 +1,9 @@
 import React from 'react';
+
 import { Route, Switch, Link } from 'react-router-dom';
 import './App.css';
-import Home from '../../pages/Home';
-import SinglePost from '../../pages/SinglePost';
+import Home from 'pages/Home';
+import SinglePost from 'pages/SinglePost';
 
 const App = () => (
   <>

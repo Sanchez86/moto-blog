@@ -6,7 +6,7 @@ import Error from '../components/Error';
 
 const Home = () => {
   const err: string = useSelector((state:IState) => state.error);
-  const content = err ? <Error err={err} /> : <Posts />;
+  const content = err ? <Error error={err} /> : <Posts />;
   return (
     <div className="App">
       {content}
