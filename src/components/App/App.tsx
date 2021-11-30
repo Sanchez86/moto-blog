@@ -1,16 +1,16 @@
 import React from 'react';
-import './App.css';
 import { useSelector } from 'react-redux';
-import { IState } from 'interfaces';
+import { selectError } from 'store/selectors';
+import './App.css';
 import Posts from '../Posts';
 import Error from '../Error';
 
-const App = () => {
-  const err: string = useSelector((state:IState) => state.error);
-  const content = err ? <Error err={err} /> : <Posts />;
+const App: React.FC = () => {
+  const error = useSelector(selectError);
+
   return (
     <div className="App">
-      {content}
+      {error ? <Error error={error} /> : <Posts />}
     </div>
   );
 };
