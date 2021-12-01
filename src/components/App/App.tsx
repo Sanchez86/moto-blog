@@ -1,11 +1,10 @@
 import React from 'react';
-
 import { Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 import Home from 'pages/Home';
 import SinglePost from 'pages/SinglePost';
 
-const App = () => (
+const App: React.FC = () => (
   <>
     <header><Link to="/">Home</Link></header>
     <Switch>
