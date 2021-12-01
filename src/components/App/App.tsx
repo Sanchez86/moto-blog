@@ -1,18 +1,22 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { selectError } from 'store/selectors';
+import { Route, Switch, Link } from 'react-router-dom';
 import './App.css';
-import Posts from '../Posts';
-import Error from '../Error';
+import Home from 'pages/Home';
+import SinglePost from 'pages/SinglePost';
 
-const App: React.FC = () => {
-  const error = useSelector(selectError);
+const App: React.FC = () => (
+  <>
+    <header><Link to="/">Home</Link></header>
+    <Switch>
 
-  return (
-    <div className="App">
-      {error ? <Error error={error} /> : <Posts />}
-    </div>
-  );
-};
+      <Route path="/" exact>
+        <Home />
+      </Route>
+
+      <Route path="/post/:postId" component={SinglePost} />
+
+    </Switch>
+  </>
+);
 
 export default App;

@@ -13,7 +13,6 @@ const Posts: React.FC = () => {
   }, [dispatch]);
 
   const posts = useSelector(selectPosts);
-  console.log('posts', posts);
 
   return (
     <div>

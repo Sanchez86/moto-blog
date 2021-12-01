@@ -10,3 +10,8 @@ export const selectPosts = createSelector(
   (state: IState) => state.data,
   (data: IData[]) => data,
 );
+
+export const selectSinglePost = (postId: number) => createSelector(
+  (state: IState) => state.data,
+  (data: IData[]) => data.find((elem) => elem?.sys?.id === postId),
+);

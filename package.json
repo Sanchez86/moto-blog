@@ -29,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "contentful-typescript-codegen": "contentful-typescript-codegen --output contentful.d.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -53,8 +54,11 @@
     "@types/react-router-dom": "^5.3.1",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
+    "contentful-management": "^7.45.2",
+    "contentful-typescript-codegen": "^3.2.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-config-airbnb-typescript": "^14.0.1"
+    "eslint-config-airbnb-typescript": "^14.0.1",
+    "prettier": "^2.4.1"
   }
 }
