@@ -8,7 +8,6 @@ import Header from 'components/Header';
 const App: React.FC = () => (
   <div className="wrapper">
     <Header />
-
     <Switch>
 
       <Route path="/" exact>

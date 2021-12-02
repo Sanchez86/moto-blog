@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { IData, IState } from 'interfaces';
+import { IData } from 'interfaces';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea, Grid } from '@mui/material';
 import './Post.scss';
 
-const Post = ({ post }: { post: IData }) => {
+const Post: React.FC<{ post: IData }> = ({ post }) => {
   const arr = post?.fields?.content?.content[0]?.content.map((item: any) => item.value);
 
   return (
@@ -34,6 +34,7 @@ const Post = ({ post }: { post: IData }) => {
         </CardActionArea>
       </Card>
     </Grid>
+
   );
 };
 

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3135bf22-e532-4320-9b67-25783c46a879" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Post/Post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Post/Post.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="215k2b2N83jBIA8WxGCv1FttHhV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="ts.external.directory.path" value="C:\Users\konev\PhpstormProjects\moto-blog\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src" />
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\components" />
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\store\saga" />
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog" />
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\store" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\components\Post" />
+      <recent name="C:\Users\konev\PhpstormProjects\moto-blog\src\components\App" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3135bf22-e532-4320-9b67-25783c46a879" name="Changes" comment="" />
+      <created>1637238130983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637238130983</updated>
+      <workItem from="1637238133088" duration="122000" />
+      <workItem from="1637238405004" duration="304000" />
+      <workItem from="1637238719127" duration="435000" />
+      <workItem from="1637239166610" duration="13000" />
+      <workItem from="1637239205504" duration="95000" />
+      <workItem from="1637239309683" duration="176000" />
+      <workItem from="1637239505563" duration="150000" />
+      <workItem from="1637239665645" duration="1051000" />
+      <workItem from="1637240749260" duration="128000" />
+      <workItem from="1637240886940" duration="57000" />
+      <workItem from="1637240952712" duration="555000" />
+      <workItem from="1637241519361" duration="167000" />
+      <workItem from="1637241702925" duration="3592000" />
+      <workItem from="1637245325432" duration="588000" />
+      <workItem from="1637245927897" duration="2649000" />
+      <workItem from="1637306835663" duration="2165000" />
+      <workItem from="1637328249749" duration="942000" />
+      <workItem from="1637329889370" duration="567000" />
+      <workItem from="1637333579535" duration="1259000" />
+      <workItem from="1637569248551" duration="23747000" />
+      <workItem from="1637598183179" duration="15000" />
+      <workItem from="1637655145606" duration="9323000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/show-posts" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

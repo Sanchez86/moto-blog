@@ -10,6 +10,7 @@ import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Zoom from '@mui/material/Zoom';
 import { Container } from '@mui/material';
+import { selectPosts } from 'store/selectors';
 import Post from '../Post';
 import PostList from '../PostList';
 import Header from '../Header';
@@ -58,7 +59,7 @@ const Posts: React.FC = () => {
     dispatch(loadPostsRequest());
   }, [dispatch]);
 
-  const posts:IData[] = useSelector((state:IState) => state.data);
+  const posts = useSelector(selectPosts);
 
   const markup: string = useSelector((state: IState) => state.markup);
 
