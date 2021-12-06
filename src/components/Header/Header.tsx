@@ -19,8 +19,6 @@ const Header: React.FC = () => {
   const [view, setView] = useState('module');
 
   const handleChange = (event: React.MouseEvent<HTMLElement>, nextView: string) => {
-    console.log('event', event);
-    console.log('nextView', nextView);
     setView(nextView);
   };
 
@@ -57,13 +55,22 @@ const Header: React.FC = () => {
                 exclusive
                 onChange={handleChange}
               >
-
-                <ToggleButton onClick={() => onList()} value="list" aria-label="list" className="icon-block">
-                  <ViewListIcon />
+                <ToggleButton
+                  onClick={onModule}
+                  value="module"
+                  aria-label="module"
+                  className="icon-block"
+                >
+                  <ViewModuleIcon />
                 </ToggleButton>
 
-                <ToggleButton onClick={() => onModule()} value="module" aria-label="module" className="icon-block">
-                  <ViewModuleIcon />
+                <ToggleButton
+                  onClick={onList}
+                  value="list"
+                  aria-label="list"
+                  className="icon-block"
+                >
+                  <ViewListIcon />
                 </ToggleButton>
 
               </ToggleButtonGroup>

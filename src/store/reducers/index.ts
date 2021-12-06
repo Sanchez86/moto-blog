@@ -7,8 +7,7 @@ import {
 } from '../actions/load-posts';
 
 import markupPosts from '../actions/markup-posts';
-
-type Markup = 'list' | 'module' | 'quilt';
+import { Markup } from '../../types';
 
 interface IInitialState {
   data: Array<any>;

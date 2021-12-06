@@ -11,6 +11,11 @@ export const selectPosts = createSelector(
   (data: IData[]) => data,
 );
 
+export const selectMarkup = createSelector(
+  (state: IState) => state.markup,
+  (markup: string) => markup,
+);
+
 export const selectSinglePost = (postId: number) => createSelector(
   (state: IState) => state.data,
   (data: IData[]) => data.find((elem) => elem?.sys?.id === postId),

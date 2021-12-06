@@ -1,17 +1,15 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { IData, IState } from 'interfaces';
+import { IData } from 'interfaces';
 import { Container } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import { selectSinglePost } from 'store/selectors';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import './SinglePost.scss';
 
 const SinglePost = ({ match: { params: { postId } } }: any) => {
-  const item:IData = useSelector((state:IState) => (
-    state.data.find((elem) => elem.sys.id === postId)
-  ));
-
-  const arr = item?.fields?.content?.content[0]?.content.map((elem: any) => elem.value);
+  const item:IData = useSelector(selectSinglePost(postId));
 
   return (
     <Container>
@@ -28,7 +26,7 @@ const SinglePost = ({ match: { params: { postId } } }: any) => {
             alt={item?.fields?.title}
           />
         </div>
-        <p>{arr}</p>
+        {documentToReactComponents(item?.fields?.content)}
       </div>
     </Container>
   );

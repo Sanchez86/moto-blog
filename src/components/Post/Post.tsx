@@ -28,7 +28,9 @@ const Post: React.FC<{ post: IData }> = ({ post }) => {
               <Link to={`/post/${post?.sys?.id}`} className="post__label">{post?.fields?.title}</Link>
             </Typography>
             <Typography variant="body2" className="post__description">
-              {arr}
+              <Link to={`/post/${post?.sys?.id}`} className="post__label">
+                {arr}
+              </Link>
             </Typography>
           </CardContent>
         </CardActionArea>

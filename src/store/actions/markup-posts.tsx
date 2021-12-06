@@ -1,6 +1,5 @@
 import { createAction } from '@reduxjs/toolkit';
-
-type Markup = 'list' | 'module' | 'quilt';
+import { Markup } from 'types';
 
 const markupPosts = createAction<Markup>('MARKUP_POSTS');
 
