@@ -1,0 +1,17 @@
+body{
+    .modal-window{
+        
+        div[role="dialog"]{
+            padding: 15px;
+            max-width: 1000px;
+            width: 100%;
+        }
+    }
+    .modal-btn{
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        transition: .3s;
+        background-image: linear-gradient(90deg, rgb(1, 36, 0) 0%, rgb(82, 240, 76) 0%, rgb(18, 9, 121) 0%, rgb(184, 10, 177) 100%, rgb(241, 255, 0) 100%);
+    }
+}
