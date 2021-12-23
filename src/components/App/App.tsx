@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Home from 'pages/Home';
 import SinglePost from 'pages/SinglePost/index';
-import Header from 'components/Header';
+import Header from '../Header';
 
 const App: React.FC = () => (
   <div className="wrapper">

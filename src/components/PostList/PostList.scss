@@ -1,9 +1,9 @@
+@import 'styles/variables';
+
 .App{
   .post-list{
     margin-bottom: 25px;
     margin-top: 0;
-
-   
     max-width: 1200px;
     margin: auto;
   
@@ -36,7 +36,7 @@
       
     }
     &__label{
-      color: #000000;
+      color: $color-black;
       text-decoration: none;
     }
     &__link{
@@ -76,8 +76,4 @@
     }
     
   }
-}
-
-.css-1v2exvi-MuiCardActionArea-focusHighlight{
-  opacity: 0 !important;
 }

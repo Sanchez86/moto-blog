@@ -1,5 +1,6 @@
 import { createReducer } from '@reduxjs/toolkit';
-
+import { IData } from 'interfaces';
+import { Markup } from 'types';
 import {
   loadPostsRequest,
   loadPostsResponse,
@@ -7,10 +8,9 @@ import {
 } from '../actions/load-posts';
 
 import markupPosts from '../actions/markup-posts';
-import { Markup } from '../../types';
 
 interface IInitialState {
-  data: Array<any>;
+  data: Array<IData>;
   error: string;
   isLoading: boolean;
   markup: Markup;

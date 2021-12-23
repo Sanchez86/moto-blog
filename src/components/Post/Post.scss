@@ -1,8 +1,10 @@
+@import 'styles/variables';
+
 .post{
   max-width: 300px;
 
   &__label{
-    color: #000000;
+    color: $color-black;
     text-decoration: none;
   }
   &__card{
