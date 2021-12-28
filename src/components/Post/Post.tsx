@@ -10,12 +10,13 @@ import './Post.scss';
 
 const Post: React.FC<{ post: IData }> = ({ post }) => {
   const arr = post?.fields?.content?.content[0]?.content.map((item: any) => item.value);
+  const postId = post?.sys?.id;
 
   return (
     <Grid className="post" item xs={6} md={4} lg={3}>
       <Card className="post__card" sx={{ maxWidth: 345 }}>
         <CardActionArea>
-          <Link to={`/post/${post?.sys?.id}`} className="post__label">
+          <Link to={`/post/${postId}`} className="post__label">
             <CardMedia
               component="img"
               height="140"
@@ -25,10 +26,10 @@ const Post: React.FC<{ post: IData }> = ({ post }) => {
           </Link>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div" className="post__header">
-              <Link to={`/post/${post?.sys?.id}`} className="post__label">{post?.fields?.title}</Link>
+              <Link to={`/post/${postId}`} className="post__label">{post?.fields?.title}</Link>
             </Typography>
             <Typography variant="body2" className="post__description">
-              <Link to={`/post/${post?.sys?.id}`} className="post__label">
+              <Link to={`/post/${postId}`} className="post__label">
                 {arr}
               </Link>
             </Typography>

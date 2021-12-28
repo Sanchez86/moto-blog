@@ -1,56 +1,16 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { loadPostsRequest } from 'store/actions/load-posts';
-import { IData } from 'interfaces';
+import ScrollTop from 'components/ScrollTop';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import Zoom from '@mui/material/Zoom';
 import { Container } from '@mui/material';
+import { loadPostsRequest } from 'store/actions/load-posts';
 import { selectPosts, selectMarkup } from 'store/selectors';
+import { IData } from 'interfaces';
 import Post from '../Post';
 import PostList from '../PostList';
-import Header from '../Header';
-
-interface Props {
-  children: React.ReactElement;
-}
-
-function ScrollTop(props: Props) {
-  const { children } = props;
-  const trigger = useScrollTrigger({
-    target: undefined,
-    disableHysteresis: true,
-    threshold: 100,
-  });
-
-  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    const anchor = (
-      (event.target as HTMLDivElement).ownerDocument || document
-    ).querySelector('#header-anchor');
-
-    if (anchor) {
-      anchor.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-      });
-    }
-  };
-
-  return (
-    <Zoom in={trigger}>
-      <Box
-        onClick={handleClick}
-        sx={{ position: 'fixed', bottom: 16, right: 16 }}
-      >
-        {children}
-      </Box>
-    </Zoom>
-  );
-}
 
 const Posts: React.FC = () => {
   const dispatch = useDispatch();
@@ -70,7 +30,7 @@ const Posts: React.FC = () => {
           {markupType === 'list' ? posts.map((post: IData) => (<PostList key={post?.sys?.id} post={post} />)) : posts.map((post: IData) => (<Post key={post?.sys?.id} post={post} />))}
         </Grid>
       </Container>
-      <ScrollTop {...Header}>
+      <ScrollTop>
         <Fab color="secondary" size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />
         </Fab>
