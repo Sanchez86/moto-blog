@@ -2,14 +2,10 @@ interface IfieldsForImage {
   fields: { file: { url: string } }
 }
 
-interface IContent {
-  content: any[]
-}
-
 interface IFields{
   title: string;
   image: IfieldsForImage;
-  content: IContent;
+  content: any;
 }
 
 export interface IData {
@@ -21,4 +17,5 @@ export interface IState {
   data: IData[];
   error: string;
   isLoading: boolean;
+  markup: string;
 }

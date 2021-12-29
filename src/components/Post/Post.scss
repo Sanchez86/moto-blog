@@ -1,7 +1,47 @@
+@import 'styles/variables';
+
 .post{
   max-width: 300px;
-  &__img{
-    width: 100%;
-    object-fit: cover;
+
+  &__label{
+    color: $color-black;
+    text-decoration: none;
   }
+  &__card{
+    position: relative;
+    margin: 0 auto;
+    img{
+      transition: .5s;
+    }
+    &:after{
+      content: "";
+      width: 0;
+      transition: .3s;
+    }
+    &:hover{
+      img{
+        width: 110%;
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 3px;
+        background-image: linear-gradient(90deg, rgb(1, 36, 0) 0%, rgb(82, 240, 76) 0%, rgb(18, 9, 121) 28%, rgb(184, 10, 177) 62%, rgb(241, 255, 0) 100%);
+      }
+    }
+  }
+  &__header{
+    height: 60px;
+    overflow: hidden;
+  }
+  &__description{
+    height: 97px;
+    overflow: hidden;
+    padding: 0;
+  }
+  
 }
