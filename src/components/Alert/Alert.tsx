@@ -27,7 +27,7 @@ const AlertDialog: React.FC = () => {
   };
 
   return (
-    <div>
+    <>
       <Fab
         className="modal-btn"
         color="primary"
@@ -75,7 +75,7 @@ const AlertDialog: React.FC = () => {
           </Box>
         </form>
       </Dialog>
-    </div>
+    </>
   );
 };
 
