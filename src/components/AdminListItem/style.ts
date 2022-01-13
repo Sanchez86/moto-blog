@@ -1,9 +1,16 @@
 import { makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles(() => ({
+interface ITheme {
+  palette: {
+    primary: { main: string },
+    secondary: { main: string },
+  };
+}
+
+const useStyles = makeStyles((theme: ITheme) => ({
   link: {
     textDecoration: 'none',
-    color: '#000000',
+    color: theme.palette.primary.main,
   },
   item: {
     padding: '5px 15px',
@@ -15,12 +22,13 @@ const useStyles = makeStyles(() => ({
       backgroundImage: 'linear-gradient(90deg, rgb(1, 36, 0) 0%, rgb(82, 240, 76) 0%, rgb(18, 9, 121) 0%, rgb(184, 10, 177) 100%, rgb(241, 255, 0) 100%)',
     },
     '&:hover a': {
-      color: '#FFFFFF',
+      color: theme.palette.secondary.main,
     },
     '&:hover svg': {
-      color: '#FFFFFF',
+      color: theme.palette.secondary.main,
     },
   },
-}));
+}
+));
 
 export default useStyles;
